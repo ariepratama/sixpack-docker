@@ -13,8 +13,4 @@ RUN apt-get install -y \
 RUN pip install -U pip
 RUN pip install sixpack
 
-ENTRYPOINT ["sixpack", "sixpack-web"]
-
-
-
 
