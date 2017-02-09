@@ -1,16 +1,8 @@
-FROM ubuntu:14.04
+FROM python:2.7.9
 MAINTAINER "ariepratama"
 
-RUN sed -i 's/archive.ubuntu.com/kambing.ui.ac.id/g' /etc/apt/sources.list
+RUN pip install sixpack==2.3.1
+RUN pip install Flask-Assets==0.12
 
-RUN apt-get update
-
-RUN apt-get install -y \
-  python-dev \
-  python-pip \
-  build-essential
-
-RUN pip install -U pip
-RUN pip install sixpack
 
 
